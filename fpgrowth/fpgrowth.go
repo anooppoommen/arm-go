@@ -56,6 +56,10 @@ func (ctx Context) WriteItemsets(
 	return nil
 }
 
+func (ctx Context) GetItemizer() Itemizer {
+	return ctx.itemizer
+}
+
 // WriteRules writes rules to CSV file.
 func (ctx Context) WriteRules(
 	outputPath string,
