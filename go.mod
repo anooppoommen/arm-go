@@ -1,4 +1,4 @@
-module github.com/cpearce/arm-go
+module github.com/anooppoommen/arm-go
 
 go 1.22.2
 

@@ -1,7 +1,10 @@
 # arm-go
 
-![Build Status](https://github.com/cpearce/arm-go/actions/workflows/go.yml/badge.svg)
-[![Go Reference](https://pkg.go.dev/badge/github.com/cpearce/arm-go.svg)](https://pkg.go.dev/github.com/cpearce/arm-go)
+![Build Status](https://github.com/anooppoommen/arm-go/actions/workflows/go.yml/badge.svg)
+[![Go Reference](https://pkg.go.dev/badge/github.com/anooppoommen/arm-go.svg)](https://pkg.go.dev/github.com/anooppoommen/arm-go)
+
+Originally written by github.com/cpearce/arm-go
+> This repo has been forked to add some features for personal use.
 
 An implementation of FPGrowth frequent pattern generation algorithm,
 along with association rule generation, in Go.
@@ -22,7 +25,7 @@ To build, first you must [download and install Go](https://golang.org/dl/).
 Then install with:
 
 ```
-go install github.com/cpearce/arm-go/cmd/arm
+go install github.com/anooppoommen/arm-go/cmd/arm
 ```
 
 That will download, build, and install the `arm` binary into your `$GOPATH/bin`
@@ -55,7 +58,7 @@ used for rule generation.
 
 ## The `fpgrowth` package
 
-The underlying implementation can be used as a library as well. See the [fpgrowth go package docs](https://pkg.go.dev/github.com/cpearce/arm-go/fpgrowth)
+The underlying implementation can be used as a library as well. See the [fpgrowth go package docs](https://pkg.go.dev/github.com/anooppoommen/arm-go/fpgrowth)
 for more information.
 
 ## Development
@@ -63,7 +66,7 @@ for more information.
 To run the cmd/arm binary:
 
 ```
-go run github.com/cpearce/arm-go/cmd/arm \
+go run github.com/anooppoommen/arm-go/cmd/arm \
   --input datasets/kosarak.csv \
   --output rules.csv \
   --itemsets itemsets.csv \
